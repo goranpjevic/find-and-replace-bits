@@ -14,5 +14,5 @@ cat frb.apl | /Applications/Dyalog-18.0.app/Contents/Resources/Dyalog/dyalog f i
   `111111110000000000000000`:
 
 ```
-cat frb.apl | /Applications/Dyalog-18.0.app/Contents/Resources/Dyalog/dyalog fr input_image.bin 000000000000000011111111 111111110000000000000000 output_image.bmp
+cat frb.apl | /Applications/Dyalog-18.0.app/Contents/Resources/Dyalog/dyalog fr input_image.bmp 000000000000000011111111 111111110000000000000000 output_image.bmp
 ```
