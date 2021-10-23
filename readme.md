@@ -1,8 +1,8 @@
 # find and replace bits
 
-command line application written in
-[apl](https://en.wikipedia.org/wiki/APL_(programming_language)), for finding
-locations of a pattern of bits in a file, or replacing the instances of the
+command-line application written in
+[apl](https://en.wikipedia.org/wiki/APL_(programming_language)) for finding
+locations of a pattern of bits in a file or replacing the instances of the
 pattern with a different one.
 
 ## usage
