@@ -17,9 +17,8 @@ installed on macos:
 cat frb.apl | /Applications/Dyalog-18.0.app/Contents/Resources/Dyalog/dyalog f input_file.bin 00001111
 ```
 
-* find and replace pattern of bits `000000000000000011111111` with the pattern
-  `111111110000000000000000`:
+* find and replace pattern of bits `00101110` with the pattern `00100001`:
 
 ```sh
-cat frb.apl | /Applications/Dyalog-18.0.app/Contents/Resources/Dyalog/dyalog fr input_image.bmp 000000000000000011111111 111111110000000000000000 output_image.bmp
+cat frb.apl | /Applications/Dyalog-18.0.app/Contents/Resources/Dyalog/dyalog fr example/input_text.txt 00101110 00100001 example/output_text.txt
 ```
