@@ -1,8 +1,15 @@
 # find and replace bits
 
-## how to run
+command line application written in
+[apl](https://en.wikipedia.org/wiki/APL_(programming_language)), for finding
+locations of a pattern of bits in a file, or replacing the instances of the
+pattern with a different one.
 
-these commands work with [dyalog version 18.0](https://www.dyalog.com/dyalog/dyalog-versions/180.htm) installed on macos:
+## usage
+
+these commands work with
+[dyalog version 18.0](https://www.dyalog.com/dyalog/dyalog-versions/180.htm)
+installed on macos:
 
 * find locations of bits starting with the pattern `00001111`:
 
