@@ -11,7 +11,7 @@ these commands work with
 [dyalog version 18.0](https://www.dyalog.com/dyalog/dyalog-versions/180.htm)
 installed on macos:
 
-* find locations of bits starting with the pattern `01101100`:
+* find locations of the pattern of bits `01101100`:
 
 ```sh
 /Applications/Dyalog-18.0.app/Contents/Resources/Dyalog/dyalog -script src/frb.apl f example/input_text.txt 01101100
