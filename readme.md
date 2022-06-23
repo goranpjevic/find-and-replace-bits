@@ -1,24 +1,38 @@
 # find and replace bits
 
-command-line application written in
-[apl](https://en.wikipedia.org/wiki/APL_(programming_language)) for finding
-locations of a pattern of bits in a file or replacing the instances of the
-pattern with a different one.
+command-line application for finding the locations of a pattern of bits in a
+file or replacing the instances of the pattern with a different one.
 
 ## usage
 
-these commands work with
-[dyalog version 18.0](https://www.dyalog.com/dyalog/dyalog-versions/180.htm)
-installed on macos:
+  ```sh
+  ./frb.apl [option] [args]
+  ```
 
-* find locations of the pattern of bits `01101100`:
+### options
 
-```sh
-dyalog -script src/frb.apl f example/input_text.txt 01101100
-```
+  - find the locations of the pattern of bits:
 
-* find and replace pattern of bits `00101110` with the pattern `00100001`:
+    ```sh
+    f [input_file] [pattern_of_bits_to_find]
+    ```
 
-```sh
-dyalog -script src/frb.apl fr example/input_text.txt 00101110 00100001 example/output_text.txt
-```
+  - replace the pattern of bits:
+
+    ```sh
+    fr [input_file] [pattern_of_bits_to_find] [pattern_of_bits_to_replace_with] [output_file]
+    ```
+
+## examples
+
+  -  find locations of the pattern of bits `01101100`:
+
+    ```sh
+    ./frb.apl f example/input_text.txt 01101100
+    ```
+
+  -  find and replace the pattern of bits `00101110` with the pattern `00100001`:
+
+    ```sh
+    ./frb.apl fr example/input_text.txt 00101110 00100001 example/output_text.txt
+    ```
