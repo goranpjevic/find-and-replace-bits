@@ -5,7 +5,8 @@ a←2⎕nq#'getcommandlineargs'
 i←⍕11 ¯1⎕map 3⊃a
 {
   ⍝ find the locations of the pattern of bits
-  ∧/'f'=⍵:⎕←(((⍕(4⊃a)='1')⎕s{⍵.(1↑Offsets)})i)÷2
+  ∧/'f'=⍵:⎕←2÷⍨((⍕'1'=4⊃a)⎕s{⍵.(1↑Offsets)})i
+  o←(6⊃a)(⎕ncreate⍠'IfExists' 'Replace')0
   ⍝ replace the pattern of bits
-  (⍎((⍕(4⊃a)='1')⎕r(⍕(5⊃a)='1'))i)⎕nappend((6⊃a)(⎕ncreate⍠'IfExists' 'Replace') 0)11
+  (⍎((⍕'1'=4⊃a)⎕r(⍕'1'=5⊃a))i)⎕nappend o 11
 }2⊃a
